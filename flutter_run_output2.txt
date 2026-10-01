@@ -1,0 +1,96 @@
+Launching lib\main.dart on SM M426B in debug mode...
+Running Gradle task 'assembleDebug'...                          
+C:\Users\Shwetank Pathak\Desktop\app\local_plugins\app_links\android\src\main\java\com\llfbandit\app_links\AppLinksHelper.java:3: error: package android.content does not exist
+import android.content.Intent;
+                      ^
+C:\Users\Shwetank Pathak\Desktop\app\local_plugins\app_links\android\src\main\java\com\llfbandit\app_links\AppLinksHelper.java:7: error: cannot find symbol
+  public static String getUrl(Intent intent) {
+                              ^
+  symbol:   class Intent
+  location: class AppLinksHelper
+C:\Users\Shwetank Pathak\Desktop\app\local_plugins\app_links\android\src\main\java\com\llfbandit\app_links\AppLinksPlugin.java:3: error: package android.content does not exist
+import android.content.Intent;
+                      ^
+C:\Users\Shwetank Pathak\Desktop\app\local_plugins\app_links\android\src\main\java\com\llfbandit\app_links\AppLinksPlugin.java:148: error: cannot find symbol
+  public boolean onNewIntent(@NonNull Intent intent) {
+                                      ^
+  symbol:   class Intent
+  location: class AppLinksPlugin
+C:\Users\Shwetank Pathak\Desktop\app\local_plugins\app_links\android\src\main\java\com\llfbandit\app_links\AppLinksPlugin.java:158: error: cannot find symbol
+  private boolean handleIntent(Intent intent) {
+                               ^
+  symbol:   class Intent
+  location: class AppLinksPlugin
+C:\Users\Shwetank Pathak\Desktop\app\local_plugins\app_links\android\src\main\java\com\llfbandit\app_links\AppLinksHelper.java:10: error: package Intent does not exist
+    if (Intent.ACTION_SEND.equals(action) ||
+              ^
+C:\Users\Shwetank Pathak\Desktop\app\local_plugins\app_links\android\src\main\java\com\llfbandit\app_links\AppLinksHelper.java:11: error: package Intent does not exist
+        Intent.ACTION_SEND_MULTIPLE.equals(action) ||
+              ^
+C:\Users\Shwetank Pathak\Desktop\app\local_plugins\app_links\android\src\main\java\com\llfbandit\app_links\AppLinksHelper.java:12: error: package Intent does not exist
+        Intent.ACTION_SENDTO.equals(action)) {
+              ^
+C:\Users\Shwetank Pathak\Desktop\app\local_plugins\app_links\android\src\main\java\com\llfbandit\app_links\AppLinksPlugin.java:98: error: cannot access Activity
+    handleIntent(binding.getActivity().getIntent());
+                                    ^
+  class file for android.app.Activity not found
+C:\Users\Shwetank Pathak\Desktop\app\local_plugins\app_links\android\src\main\java\com\llfbandit\app_links\AppLinksPlugin.java:161: error: cannot find symbol
+    final int flag = Intent.FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY;
+                     ^
+  symbol:   variable Intent
+  location: class AppLinksPlugin
+10 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app_links:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  C:\Users\Shwetank Pathak\Desktop\app\local_plugins\app_links\android\src\main\java\com\llfbandit\app_links\AppLinksPlugin.java:98: error: cannot access Activity
+      handleIntent(binding.getActivity().getIntent());
+                                      ^
+    class file for android.app.Activity not found
+  C:\Users\Shwetank Pathak\Desktop\app\local_plugins\app_links\android\src\main\java\com\llfbandit\app_links\AppLinksHelper.java:7: error: cannot find symbol
+    public static String getUrl(Intent intent) {
+                                ^
+    symbol:   class Intent
+    location: class AppLinksHelper
+  C:\Users\Shwetank Pathak\Desktop\app\local_plugins\app_links\android\src\main\java\com\llfbandit\app_links\AppLinksPlugin.java:148: error: cannot find symbol
+    public boolean onNewIntent(@NonNull Intent intent) {
+                                        ^
+    symbol:   class Intent
+    location: class AppLinksPlugin
+  C:\Users\Shwetank Pathak\Desktop\app\local_plugins\app_links\android\src\main\java\com\llfbandit\app_links\AppLinksPlugin.java:158: error: cannot find symbol
+    private boolean handleIntent(Intent intent) {
+                                 ^
+    symbol:   class Intent
+    location: class AppLinksPlugin
+  C:\Users\Shwetank Pathak\Desktop\app\local_plugins\app_links\android\src\main\java\com\llfbandit\app_links\AppLinksPlugin.java:161: error: cannot find symbol
+      final int flag = Intent.FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY;
+                       ^
+    symbol:   variable Intent
+    location: class AppLinksPlugin
+  C:\Users\Shwetank Pathak\Desktop\app\local_plugins\app_links\android\src\main\java\com\llfbandit\app_links\AppLinksHelper.java:3: error: package android.content does not exist
+  import android.content.Intent;
+                        ^
+  C:\Users\Shwetank Pathak\Desktop\app\local_plugins\app_links\android\src\main\java\com\llfbandit\app_links\AppLinksPlugin.java:3: error: package android.content does not exist
+  import android.content.Intent;
+                        ^
+  C:\Users\Shwetank Pathak\Desktop\app\local_plugins\app_links\android\src\main\java\com\llfbandit\app_links\AppLinksHelper.java:10: error: package Intent does not exist
+      if (Intent.ACTION_SEND.equals(action) ||
+                ^
+  C:\Users\Shwetank Pathak\Desktop\app\local_plugins\app_links\android\src\main\java\com\llfbandit\app_links\AppLinksHelper.java:11: error: package Intent does not exist
+          Intent.ACTION_SEND_MULTIPLE.equals(action) ||
+                ^
+  C:\Users\Shwetank Pathak\Desktop\app\local_plugins\app_links\android\src\main\java\com\llfbandit\app_links\AppLinksHelper.java:12: error: package Intent does not exist
+          Intent.ACTION_SENDTO.equals(action)) {
+                ^
+  10 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 56s
+Running Gradle task 'assembleDebug'...                             61.2s
+Error: Gradle task assembleDebug failed with exit code 1

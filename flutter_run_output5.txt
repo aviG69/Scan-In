@@ -1,0 +1,832 @@
+Launching lib\main.dart on SM M426B in debug mode...
+Running Gradle task 'assembleDebug'...                          
+flutter.compileSdkVersion = 36
+Warning: The plugin flutter_secure_storage requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+Warning: The plugin google_sign_in_android requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+Warning: The plugin jni requires Android SDK version 35 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+Warning: The plugin jni_flutter requires Android SDK version 35 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+Warning: The plugin mobile_scanner requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+Warning: The plugin shared_preferences_android requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+Warning: The plugin url_launcher_android requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+Your project is configured to compile against Android SDK 33, but the following plugin(s) require to be compiled against a higher Android SDK version:
+- flutter_secure_storage compiles against Android SDK 36
+- google_sign_in_android compiles against Android SDK 36
+- jni compiles against Android SDK 35
+- jni_flutter compiles against Android SDK 35
+- mobile_scanner compiles against Android SDK 36
+- shared_preferences_android compiles against Android SDK 36
+- url_launcher_android compiles against Android SDK 36
+Fix this issue by compiling against the highest Android SDK version (they are backward compatible).
+Add the following to C:\Users\Shwetank Pathak\Desktop\app\android\app\build.gradle.kts:
+
+    android {
+        compileSdk = 36
+        ...
+    }
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\BiometricNamespaceKeyRecovery.java:3: error: package android.content does not exist
+import android.content.Context;
+                      ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\BiometricNamespaceKeyRecovery.java:4: error: package android.content does not exist
+import android.content.SharedPreferences;
+                      ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\BiometricNamespaceKeyRecovery.java:5: error: package android.util does not exist
+import android.util.Base64;
+                   ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\BiometricNamespaceKeyRecovery.java:25: error: cannot find symbol
+    public static boolean isRecoveryNeeded(Context context, FlutterSecureStorageConfig config) {
+                                           ^
+  symbol:   class Context
+  location: class BiometricNamespaceKeyRecovery
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorageConfig.java:3: error: package android.util does not exist
+import android.util.Log;
+                   ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\BiometricNamespaceKeyRecovery.java:39: error: cannot find symbol
+    public static KeyCipher sourceKeyCipher(Context context, FlutterSecureStorageConfig config) throws Exception {
+                                            ^
+  symbol:   class Context
+  location: class BiometricNamespaceKeyRecovery
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipher.java:3: error: package android.content does not exist
+import android.content.Context;
+                      ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\BiometricNamespaceKeyRecovery.java:44: error: cannot find symbol
+    public static KeyCipher targetKeyCipher(Context context, FlutterSecureStorageConfig config) throws Exception {
+                                            ^
+  symbol:   class Context
+  location: class BiometricNamespaceKeyRecovery
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\BiometricNamespaceKeyRecovery.java:49: error: cannot find symbol
+    public static byte[] decryptSourceAppKey(Context context, FlutterSecureStorageConfig config,
+                                             ^
+  symbol:   class Context
+  location: class BiometricNamespaceKeyRecovery
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\BiometricNamespaceKeyRecovery.java:61: error: cannot find symbol
+    public static void storeTargetAppKey(Context context, FlutterSecureStorageConfig config,
+                                         ^
+  symbol:   class Context
+  location: class BiometricNamespaceKeyRecovery
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\BiometricNamespaceKeyRecovery.java:71: error: cannot find symbol
+    private static boolean hasAppKey(SharedPreferences prefs) {
+                                     ^
+  symbol:   class SharedPreferences
+  location: class BiometricNamespaceKeyRecovery
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\BiometricNamespaceKeyRecovery.java:76: error: cannot find symbol
+    private static boolean hasEncryptedData(Context context, String dataPrefsName,
+                                            ^
+  symbol:   class Context
+  location: class BiometricNamespaceKeyRecovery
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipher.java:11: error: cannot find symbol
+    Cipher getCipher(Context context) throws Exception;
+                     ^
+  symbol:   class Context
+  location: interface KeyCipher
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherAlgorithm.java:3: error: package android.os does not exist
+import android.os.Build;
+                 ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherFunction.java:3: error: package android.content does not exist
+import android.content.Context;
+                      ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherFunction.java:8: error: cannot find symbol
+    KeyCipher apply(Context context, FlutterSecureStorageConfig config) throws Exception;
+                    ^
+  symbol:   class Context
+  location: interface KeyCipherFunction
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:3: error: package android.security.keystore does not exist
+import static android.security.keystore.KeyProperties.AUTH_BIOMETRIC_STRONG;
+                                       ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:3: error: static import only from classes and interfaces
+import static android.security.keystore.KeyProperties.AUTH_BIOMETRIC_STRONG;
+^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:4: error: package android.security.keystore does not exist
+import static android.security.keystore.KeyProperties.AUTH_DEVICE_CREDENTIAL;
+                                       ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:4: error: static import only from classes and interfaces
+import static android.security.keystore.KeyProperties.AUTH_DEVICE_CREDENTIAL;
+^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:6: error: package android.content does not exist
+import android.content.Context;
+                      ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:7: error: package android.content does not exist
+import android.content.SharedPreferences;
+                      ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:8: error: package android.content.pm does not exist
+import android.content.pm.PackageManager;
+                         ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:9: error: package android.os does not exist
+import android.os.Build;
+                 ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:10: error: package android.security.keystore does not exist
+import android.security.keystore.KeyGenParameterSpec;
+                                ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:11: error: package android.security.keystore does not exist
+import android.security.keystore.KeyProperties;
+                                ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:12: error: package android.util does not exist
+import android.util.Base64;
+                   ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:13: error: package android.util does not exist
+import android.util.Log;
+                   ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:38: error: cannot find symbol
+    protected final Context context;
+                    ^
+  symbol:   class Context
+  location: class KeyCipherImplementationAES23
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:41: error: cannot find symbol
+    public KeyCipherImplementationAES23(Context context, FlutterSecureStorageConfig config) throws Exception {
+                                        ^
+  symbol:   class Context
+  location: class KeyCipherImplementationAES23
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:76: error: cannot find symbol
+    protected String createKeyAlias(Context context) {
+                                    ^
+  symbol:   class Context
+  location: class KeyCipherImplementationAES23
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:91: error: cannot find symbol
+    public Cipher getCipher(Context context) throws Exception {
+                            ^
+  symbol:   class Context
+  location: class KeyCipherImplementationAES23
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:99: error: cannot find symbol
+    public Cipher getEncryptionCipher(Context context, Key key) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidAlgorithmParameterException, InvalidKeyException {
+                                      ^
+  symbol:   class Context
+  location: class KeyCipherImplementationAES23
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:244: error: package KeyGenParameterSpec does not exist
+    private void configureLegacyAuth(KeyGenParameterSpec.Builder builder) {
+                                                        ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:3: error: package android.content does not exist
+import android.content.Context;
+                      ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:4: error: package android.content.res does not exist
+import android.content.res.Configuration;
+                          ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:5: error: package android.os does not exist
+import android.os.Build;
+                 ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:6: error: package android.security.keystore does not exist
+import android.security.keystore.KeyGenParameterSpec;
+                                ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:7: error: package android.security.keystore does not exist
+import android.security.keystore.KeyProperties;
+                                ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:35: error: cannot find symbol
+    private final Context context;
+                  ^
+  symbol:   class Context
+  location: class KeyCipherImplementationRSAOAEP
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:38: error: cannot find symbol
+    public KeyCipherImplementationRSAOAEP(Context context, FlutterSecureStorageConfig config) throws Exception {
+                                          ^
+  symbol:   class Context
+  location: class KeyCipherImplementationRSAOAEP
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:69: error: cannot find symbol
+    public Cipher getCipher(Context context) {
+                            ^
+  symbol:   class Context
+  location: class KeyCipherImplementationRSAOAEP
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:110: error: cannot find symbol
+    private void createRSAKeysIfNeeded(Context context) throws Exception {
+                                       ^
+  symbol:   class Context
+  location: class KeyCipherImplementationRSAOAEP
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:128: error: cannot find symbol
+    private void createKeys(Context context) throws Exception {
+                            ^
+  symbol:   class Context
+  location: class KeyCipherImplementationRSAOAEP
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:145: error: cannot find symbol
+    private AlgorithmParameterSpec makeAlgorithmParameterSpec(Context context, Calendar start, Calendar end) {
+                                                              ^
+  symbol:   class Context
+  location: class KeyCipherImplementationRSAOAEP
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\LegacyNamespaceKeyRecovery.java:3: error: package android.content does not exist
+import android.content.Context;
+                      ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\LegacyNamespaceKeyRecovery.java:4: error: package android.content does not exist
+import android.content.SharedPreferences;
+                      ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\LegacyNamespaceKeyRecovery.java:5: error: package android.util does not exist
+import android.util.Base64;
+                   ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\LegacyNamespaceKeyRecovery.java:6: error: package android.util does not exist
+import android.util.Log;
+                   ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\LegacyNamespaceKeyRecovery.java:48: error: cannot find symbol
+    public static boolean recoverIfNeeded(Context context, FlutterSecureStorageConfig config) {
+                                          ^
+  symbol:   class Context
+  location: class LegacyNamespaceKeyRecovery
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\LegacyNamespaceKeyRecovery.java:53: error: cannot find symbol
+    static boolean recoverIfNeeded(Context context, FlutterSecureStorageConfig config,
+                                   ^
+  symbol:   class Context
+  location: class LegacyNamespaceKeyRecovery
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\LegacyNamespaceKeyRecovery.java:118: error: cannot find symbol
+    private static boolean hasWrappedKey(SharedPreferences prefs) {
+                                         ^
+  symbol:   class SharedPreferences
+  location: class LegacyNamespaceKeyRecovery
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\LegacyNamespaceKeyRecovery.java:123: error: cannot find symbol
+    private static boolean hasEncryptedData(Context context, String dataPrefsName,
+                                            ^
+  symbol:   class Context
+  location: class LegacyNamespaceKeyRecovery
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\LegacyNamespaceKeyRecovery.java:129: error: cannot find symbol
+    private static boolean keyDecryptsOwnData(Context context, String dataPrefsName, String keyPrefix,
+                                              ^
+  symbol:   class Context
+  location: class LegacyNamespaceKeyRecovery
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\LegacyNamespaceKeyRecovery.java:160: error: cannot find symbol
+    private static String sampleEncryptedValue(Context context, String dataPrefsName, String keyPrefix) {
+                                               ^
+  symbol:   class Context
+  location: class LegacyNamespaceKeyRecovery
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipher.java:3: error: package android.content does not exist
+import android.content.Context;
+                      ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipher.java:10: error: cannot find symbol
+    void deleteKey(Context context) throws Exception;
+                   ^
+  symbol:   class Context
+  location: interface StorageCipher
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherAlgorithm.java:3: error: package android.os does not exist
+import android.os.Build;
+                 ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFunction.java:3: error: package android.content does not exist
+import android.content.Context;
+                      ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFunction.java:11: error: cannot find symbol
+    StorageCipher apply(Context context, KeyCipher keyCipher, Cipher cipher, FlutterSecureStorageConfig config) throws Exception;
+                        ^
+  symbol:   class Context
+  location: interface StorageCipherFunction
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFactory.java:3: error: package android.content does not exist
+import android.content.Context;
+                      ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFactory.java:4: error: package android.content does not exist
+import android.content.SharedPreferences;
+                      ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFactory.java:5: error: package android.os does not exist
+import android.os.Build;
+                 ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\NamespacedConfigSource.java:3: error: package android.content does not exist
+import android.content.Context;
+                      ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\NamespacedConfigSource.java:4: error: package android.content does not exist
+import android.content.SharedPreferences;
+                      ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFactory.java:67: error: cannot find symbol
+    public StorageCipher getSavedStorageCipher(Context context, Cipher cipher) throws Exception {
+                                               ^
+  symbol:   class Context
+  location: class StorageCipherFactory
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFactory.java:72: error: cannot find symbol
+    public StorageCipher getCurrentStorageCipher(Context context, Cipher cipher) throws Exception {
+                                                 ^
+  symbol:   class Context
+  location: class StorageCipherFactory
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFactory.java:81: error: cannot find symbol
+    /* package */ StorageCipher createStorageCipher(Context context, KeyCipher keyCipher,
+                                                    ^
+  symbol:   class Context
+  location: class StorageCipherFactory
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFactory.java:108: error: cannot find symbol
+    public KeyCipher getCurrentKeyCipher(Context context) throws Exception {
+                                         ^
+  symbol:   class Context
+  location: class StorageCipherFactory
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFactory.java:112: error: cannot find symbol
+    public KeyCipher getSavedKeyCipher(Context context) throws Exception {
+                                       ^
+  symbol:   class Context
+  location: class StorageCipherFactory
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFactory.java:139: error: package SharedPreferences does not exist
+    public void storeCurrentAlgorithms(SharedPreferences.Editor editor) {
+                                                        ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\NamespacedConfigSource.java:17: error: cannot find symbol
+    private final SharedPreferences namespacedConfig;
+                  ^
+  symbol:   class SharedPreferences
+  location: class NamespacedConfigSource
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\NamespacedConfigSource.java:18: error: cannot find symbol
+    private final SharedPreferences legacyConfig;
+                  ^
+  symbol:   class SharedPreferences
+  location: class NamespacedConfigSource
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\NamespacedConfigSource.java:20: error: cannot find symbol
+    public NamespacedConfigSource(Context context, String sharedPreferencesName) {
+                                  ^
+  symbol:   class Context
+  location: class NamespacedConfigSource
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\NamespacedConfigSource.java:63: error: package SharedPreferences does not exist
+    public SharedPreferences.Editor edit() {
+                            ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationAES23.java:3: error: package android.content does not exist
+import android.content.Context;
+                      ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationAES23.java:4: error: package android.content does not exist
+import android.content.SharedPreferences;
+                      ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationAES23.java:5: error: package android.util does not exist
+import android.util.Base64;
+                   ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationAES23.java:29: error: cannot find symbol
+    public StorageCipherImplementationAES23(Context context, KeyCipher ignoredKeyCipher, Cipher cipher, FlutterSecureStorageConfig config) throws Exception {
+                                            ^
+  symbol:   class Context
+  location: class StorageCipherImplementationAES23
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationAES23.java:36: error: cannot find symbol
+    static boolean hasApplicationKey(SharedPreferences preferences) {
+                                     ^
+  symbol:   class SharedPreferences
+  location: class StorageCipherImplementationAES23
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationAES23.java:40: error: cannot find symbol
+    private SecretKey loadOrGenerateApplicationKey(Context context, Cipher biometricCipher) throws Exception {
+                                                   ^
+  symbol:   class Context
+  location: class StorageCipherImplementationAES23
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationAES23.java:66: error: cannot find symbol
+    public void deleteKey(Context context) {
+                          ^
+  symbol:   class Context
+  location: class StorageCipherImplementationAES23
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationGCM.java:3: error: package android.content does not exist
+import android.content.Context;
+                      ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationGCM.java:4: error: package android.content does not exist
+import android.content.SharedPreferences;
+                      ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationGCM.java:5: error: package android.util does not exist
+import android.util.Base64;
+                   ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationGCM.java:29: error: cannot find symbol
+    public StorageCipherImplementationGCM(Context context, KeyCipher rsaCipher, Cipher ignoredCipher, FlutterSecureStorageConfig config) throws Exception {
+                                          ^
+  symbol:   class Context
+  location: class StorageCipherImplementationGCM
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationGCM.java:58: error: cannot find symbol
+    public void deleteKey(Context context) {
+                          ^
+  symbol:   class Context
+  location: class StorageCipherImplementationGCM
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:3: error: package android.app does not exist
+import android.app.KeyguardManager;
+                  ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:4: error: package android.content does not exist
+import android.content.Context;
+                      ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:5: error: package android.content does not exist
+import android.content.SharedPreferences;
+                      ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:6: error: package android.hardware.biometrics does not exist
+import android.hardware.biometrics.BiometricManager;
+                                  ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:7: error: package android.hardware.biometrics does not exist
+import android.hardware.biometrics.BiometricPrompt;
+                                  ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:8: error: package android.os does not exist
+import android.os.Build;
+                 ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:9: error: package android.os does not exist
+import android.os.CancellationSignal;
+                 ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:10: error: package android.util does not exist
+import android.util.Base64;
+                   ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:11: error: package android.util does not exist
+import android.util.Log;
+                   ^
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:37: error: cannot find symbol
+    private final Context context;
+                  ^
+  symbol:   class Context
+  location: class FlutterSecureStorage
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:39: error: cannot find symbol
+    private SharedPreferences preferences;
+            ^
+  symbol:   class SharedPreferences
+  location: class FlutterSecureStorage
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:43: error: cannot find symbol
+    public FlutterSecureStorage(Context context) {
+                                ^
+  symbol:   class Context
+  location: class FlutterSecureStorage
+C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:448: error: cannot find symbol
+    private void migrateData(NamespacedConfigSource configSource, SharedPreferences dataSource,
+                                                                  ^
+  symbol:   class SharedPreferences
+  location: class FlutterSecureStorage
+100 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':flutter_secure_storage:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:3: error: static import only from classes and interfaces
+  import static android.security.keystore.KeyProperties.AUTH_BIOMETRIC_STRONG;
+  ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:4: error: static import only from classes and interfaces
+  import static android.security.keystore.KeyProperties.AUTH_DEVICE_CREDENTIAL;
+  ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\BiometricNamespaceKeyRecovery.java:25: error: cannot find symbol
+      public static boolean isRecoveryNeeded(Context context, FlutterSecureStorageConfig config) {
+                                             ^
+    symbol:   class Context
+    location: class BiometricNamespaceKeyRecovery
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\BiometricNamespaceKeyRecovery.java:39: error: cannot find symbol
+      public static KeyCipher sourceKeyCipher(Context context, FlutterSecureStorageConfig config) throws Exception {
+                                              ^
+    symbol:   class Context
+    location: class BiometricNamespaceKeyRecovery
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\BiometricNamespaceKeyRecovery.java:44: error: cannot find symbol
+      public static KeyCipher targetKeyCipher(Context context, FlutterSecureStorageConfig config) throws Exception {
+                                              ^
+    symbol:   class Context
+    location: class BiometricNamespaceKeyRecovery
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\BiometricNamespaceKeyRecovery.java:49: error: cannot find symbol
+      public static byte[] decryptSourceAppKey(Context context, FlutterSecureStorageConfig config,
+                                               ^
+    symbol:   class Context
+    location: class BiometricNamespaceKeyRecovery
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\BiometricNamespaceKeyRecovery.java:61: error: cannot find symbol
+      public static void storeTargetAppKey(Context context, FlutterSecureStorageConfig config,
+                                           ^
+    symbol:   class Context
+    location: class BiometricNamespaceKeyRecovery
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\BiometricNamespaceKeyRecovery.java:71: error: cannot find symbol
+      private static boolean hasAppKey(SharedPreferences prefs) {
+                                       ^
+    symbol:   class SharedPreferences
+    location: class BiometricNamespaceKeyRecovery
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\BiometricNamespaceKeyRecovery.java:76: error: cannot find symbol
+      private static boolean hasEncryptedData(Context context, String dataPrefsName,
+                                              ^
+    symbol:   class Context
+    location: class BiometricNamespaceKeyRecovery
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipher.java:11: error: cannot find symbol
+      Cipher getCipher(Context context) throws Exception;
+                       ^
+    symbol:   class Context
+    location: interface KeyCipher
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherFunction.java:8: error: cannot find symbol
+      KeyCipher apply(Context context, FlutterSecureStorageConfig config) throws Exception;
+                      ^
+    symbol:   class Context
+    location: interface KeyCipherFunction
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:38: error: cannot find symbol
+      protected final Context context;
+                      ^
+    symbol:   class Context
+    location: class KeyCipherImplementationAES23
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:41: error: cannot find symbol
+      public KeyCipherImplementationAES23(Context context, FlutterSecureStorageConfig config) throws Exception {
+                                          ^
+    symbol:   class Context
+    location: class KeyCipherImplementationAES23
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:76: error: cannot find symbol
+      protected String createKeyAlias(Context context) {
+                                      ^
+    symbol:   class Context
+    location: class KeyCipherImplementationAES23
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:91: error: cannot find symbol
+      public Cipher getCipher(Context context) throws Exception {
+                              ^
+    symbol:   class Context
+    location: class KeyCipherImplementationAES23
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:99: error: cannot find symbol
+      public Cipher getEncryptionCipher(Context context, Key key) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidAlgorithmParameterException, InvalidKeyException {
+                                        ^
+    symbol:   class Context
+    location: class KeyCipherImplementationAES23
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:35: error: cannot find symbol
+      private final Context context;
+                    ^
+    symbol:   class Context
+    location: class KeyCipherImplementationRSAOAEP
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:38: error: cannot find symbol
+      public KeyCipherImplementationRSAOAEP(Context context, FlutterSecureStorageConfig config) throws Exception {
+                                            ^
+    symbol:   class Context
+    location: class KeyCipherImplementationRSAOAEP
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:69: error: cannot find symbol
+      public Cipher getCipher(Context context) {
+                              ^
+    symbol:   class Context
+    location: class KeyCipherImplementationRSAOAEP
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:110: error: cannot find symbol
+      private void createRSAKeysIfNeeded(Context context) throws Exception {
+                                         ^
+    symbol:   class Context
+    location: class KeyCipherImplementationRSAOAEP
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:128: error: cannot find symbol
+      private void createKeys(Context context) throws Exception {
+                              ^
+    symbol:   class Context
+    location: class KeyCipherImplementationRSAOAEP
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:145: error: cannot find symbol
+      private AlgorithmParameterSpec makeAlgorithmParameterSpec(Context context, Calendar start, Calendar end) {
+                                                                ^
+    symbol:   class Context
+    location: class KeyCipherImplementationRSAOAEP
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\LegacyNamespaceKeyRecovery.java:48: error: cannot find symbol
+      public static boolean recoverIfNeeded(Context context, FlutterSecureStorageConfig config) {
+                                            ^
+    symbol:   class Context
+    location: class LegacyNamespaceKeyRecovery
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\LegacyNamespaceKeyRecovery.java:53: error: cannot find symbol
+      static boolean recoverIfNeeded(Context context, FlutterSecureStorageConfig config,
+                                     ^
+    symbol:   class Context
+    location: class LegacyNamespaceKeyRecovery
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\LegacyNamespaceKeyRecovery.java:118: error: cannot find symbol
+      private static boolean hasWrappedKey(SharedPreferences prefs) {
+                                           ^
+    symbol:   class SharedPreferences
+    location: class LegacyNamespaceKeyRecovery
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\LegacyNamespaceKeyRecovery.java:123: error: cannot find symbol
+      private static boolean hasEncryptedData(Context context, String dataPrefsName,
+                                              ^
+    symbol:   class Context
+    location: class LegacyNamespaceKeyRecovery
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\LegacyNamespaceKeyRecovery.java:129: error: cannot find symbol
+      private static boolean keyDecryptsOwnData(Context context, String dataPrefsName, String keyPrefix,
+                                                ^
+    symbol:   class Context
+    location: class LegacyNamespaceKeyRecovery
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\LegacyNamespaceKeyRecovery.java:160: error: cannot find symbol
+      private static String sampleEncryptedValue(Context context, String dataPrefsName, String keyPrefix) {
+                                                 ^
+    symbol:   class Context
+    location: class LegacyNamespaceKeyRecovery
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipher.java:10: error: cannot find symbol
+      void deleteKey(Context context) throws Exception;
+                     ^
+    symbol:   class Context
+    location: interface StorageCipher
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFunction.java:11: error: cannot find symbol
+      StorageCipher apply(Context context, KeyCipher keyCipher, Cipher cipher, FlutterSecureStorageConfig config) throws Exception;
+                          ^
+    symbol:   class Context
+    location: interface StorageCipherFunction
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFactory.java:67: error: cannot find symbol
+      public StorageCipher getSavedStorageCipher(Context context, Cipher cipher) throws Exception {
+                                                 ^
+    symbol:   class Context
+    location: class StorageCipherFactory
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFactory.java:72: error: cannot find symbol
+      public StorageCipher getCurrentStorageCipher(Context context, Cipher cipher) throws Exception {
+                                                   ^
+    symbol:   class Context
+    location: class StorageCipherFactory
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFactory.java:81: error: cannot find symbol
+      /* package */ StorageCipher createStorageCipher(Context context, KeyCipher keyCipher,
+                                                      ^
+    symbol:   class Context
+    location: class StorageCipherFactory
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFactory.java:108: error: cannot find symbol
+      public KeyCipher getCurrentKeyCipher(Context context) throws Exception {
+                                           ^
+    symbol:   class Context
+    location: class StorageCipherFactory
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFactory.java:112: error: cannot find symbol
+      public KeyCipher getSavedKeyCipher(Context context) throws Exception {
+                                         ^
+    symbol:   class Context
+    location: class StorageCipherFactory
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\NamespacedConfigSource.java:17: error: cannot find symbol
+      private final SharedPreferences namespacedConfig;
+                    ^
+    symbol:   class SharedPreferences
+    location: class NamespacedConfigSource
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\NamespacedConfigSource.java:18: error: cannot find symbol
+      private final SharedPreferences legacyConfig;
+                    ^
+    symbol:   class SharedPreferences
+    location: class NamespacedConfigSource
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\NamespacedConfigSource.java:20: error: cannot find symbol
+      public NamespacedConfigSource(Context context, String sharedPreferencesName) {
+                                    ^
+    symbol:   class Context
+    location: class NamespacedConfigSource
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationAES23.java:29: error: cannot find symbol
+      public StorageCipherImplementationAES23(Context context, KeyCipher ignoredKeyCipher, Cipher cipher, FlutterSecureStorageConfig config) throws Exception {
+                                              ^
+    symbol:   class Context
+    location: class StorageCipherImplementationAES23
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationAES23.java:36: error: cannot find symbol
+      static boolean hasApplicationKey(SharedPreferences preferences) {
+                                       ^
+    symbol:   class SharedPreferences
+    location: class StorageCipherImplementationAES23
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationAES23.java:40: error: cannot find symbol
+      private SecretKey loadOrGenerateApplicationKey(Context context, Cipher biometricCipher) throws Exception {
+                                                     ^
+    symbol:   class Context
+    location: class StorageCipherImplementationAES23
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationAES23.java:66: error: cannot find symbol
+      public void deleteKey(Context context) {
+                            ^
+    symbol:   class Context
+    location: class StorageCipherImplementationAES23
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationGCM.java:29: error: cannot find symbol
+      public StorageCipherImplementationGCM(Context context, KeyCipher rsaCipher, Cipher ignoredCipher, FlutterSecureStorageConfig config) throws Exception {
+                                            ^
+    symbol:   class Context
+    location: class StorageCipherImplementationGCM
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationGCM.java:58: error: cannot find symbol
+      public void deleteKey(Context context) {
+                            ^
+    symbol:   class Context
+    location: class StorageCipherImplementationGCM
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:37: error: cannot find symbol
+      private final Context context;
+                    ^
+    symbol:   class Context
+    location: class FlutterSecureStorage
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:39: error: cannot find symbol
+      private SharedPreferences preferences;
+              ^
+    symbol:   class SharedPreferences
+    location: class FlutterSecureStorage
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:43: error: cannot find symbol
+      public FlutterSecureStorage(Context context) {
+                                  ^
+    symbol:   class Context
+    location: class FlutterSecureStorage
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:448: error: cannot find symbol
+      private void migrateData(NamespacedConfigSource configSource, SharedPreferences dataSource,
+                                                                    ^
+    symbol:   class SharedPreferences
+    location: class FlutterSecureStorage
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\BiometricNamespaceKeyRecovery.java:3: error: package android.content does not exist
+  import android.content.Context;
+                        ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\BiometricNamespaceKeyRecovery.java:4: error: package android.content does not exist
+  import android.content.SharedPreferences;
+                        ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\BiometricNamespaceKeyRecovery.java:5: error: package android.util does not exist
+  import android.util.Base64;
+                     ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorageConfig.java:3: error: package android.util does not exist
+  import android.util.Log;
+                     ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipher.java:3: error: package android.content does not exist
+  import android.content.Context;
+                        ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherAlgorithm.java:3: error: package android.os does not exist
+  import android.os.Build;
+                   ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherFunction.java:3: error: package android.content does not exist
+  import android.content.Context;
+                        ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:3: error: package android.security.keystore does not exist
+  import static android.security.keystore.KeyProperties.AUTH_BIOMETRIC_STRONG;
+                                         ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:4: error: package android.security.keystore does not exist
+  import static android.security.keystore.KeyProperties.AUTH_DEVICE_CREDENTIAL;
+                                         ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:6: error: package android.content does not exist
+  import android.content.Context;
+                        ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:7: error: package android.content does not exist
+  import android.content.SharedPreferences;
+                        ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:8: error: package android.content.pm does not exist
+  import android.content.pm.PackageManager;
+                           ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:9: error: package android.os does not exist
+  import android.os.Build;
+                   ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:10: error: package android.security.keystore does not exist
+  import android.security.keystore.KeyGenParameterSpec;
+                                  ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:11: error: package android.security.keystore does not exist
+  import android.security.keystore.KeyProperties;
+                                  ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:12: error: package android.util does not exist
+  import android.util.Base64;
+                     ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:13: error: package android.util does not exist
+  import android.util.Log;
+                     ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationAES23.java:244: error: package KeyGenParameterSpec does not exist
+      private void configureLegacyAuth(KeyGenParameterSpec.Builder builder) {
+                                                          ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:3: error: package android.content does not exist
+  import android.content.Context;
+                        ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:4: error: package android.content.res does not exist
+  import android.content.res.Configuration;
+                            ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:5: error: package android.os does not exist
+  import android.os.Build;
+                   ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:6: error: package android.security.keystore does not exist
+  import android.security.keystore.KeyGenParameterSpec;
+                                  ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\KeyCipherImplementationRSAOAEP.java:7: error: package android.security.keystore does not exist
+  import android.security.keystore.KeyProperties;
+                                  ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\LegacyNamespaceKeyRecovery.java:3: error: package android.content does not exist
+  import android.content.Context;
+                        ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\LegacyNamespaceKeyRecovery.java:4: error: package android.content does not exist
+  import android.content.SharedPreferences;
+                        ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\LegacyNamespaceKeyRecovery.java:5: error: package android.util does not exist
+  import android.util.Base64;
+                     ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\LegacyNamespaceKeyRecovery.java:6: error: package android.util does not exist
+  import android.util.Log;
+                     ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipher.java:3: error: package android.content does not exist
+  import android.content.Context;
+                        ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherAlgorithm.java:3: error: package android.os does not exist
+  import android.os.Build;
+                   ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFunction.java:3: error: package android.content does not exist
+  import android.content.Context;
+                        ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFactory.java:3: error: package android.content does not exist
+  import android.content.Context;
+                        ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFactory.java:4: error: package android.content does not exist
+  import android.content.SharedPreferences;
+                        ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFactory.java:5: error: package android.os does not exist
+  import android.os.Build;
+                   ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\NamespacedConfigSource.java:3: error: package android.content does not exist
+  import android.content.Context;
+                        ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\NamespacedConfigSource.java:4: error: package android.content does not exist
+  import android.content.SharedPreferences;
+                        ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherFactory.java:139: error: package SharedPreferences does not exist
+      public void storeCurrentAlgorithms(SharedPreferences.Editor editor) {
+                                                          ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\NamespacedConfigSource.java:63: error: package SharedPreferences does not exist
+      public SharedPreferences.Editor edit() {
+                              ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationAES23.java:3: error: package android.content does not exist
+  import android.content.Context;
+                        ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationAES23.java:4: error: package android.content does not exist
+  import android.content.SharedPreferences;
+                        ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationAES23.java:5: error: package android.util does not exist
+  import android.util.Base64;
+                     ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationGCM.java:3: error: package android.content does not exist
+  import android.content.Context;
+                        ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationGCM.java:4: error: package android.content does not exist
+  import android.content.SharedPreferences;
+                        ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\ciphers\StorageCipherImplementationGCM.java:5: error: package android.util does not exist
+  import android.util.Base64;
+                     ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:3: error: package android.app does not exist
+  import android.app.KeyguardManager;
+                    ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:4: error: package android.content does not exist
+  import android.content.Context;
+                        ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:5: error: package android.content does not exist
+  import android.content.SharedPreferences;
+                        ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:6: error: package android.hardware.biometrics does not exist
+  import android.hardware.biometrics.BiometricManager;
+                                    ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:7: error: package android.hardware.biometrics does not exist
+  import android.hardware.biometrics.BiometricPrompt;
+                                    ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:8: error: package android.os does not exist
+  import android.os.Build;
+                   ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:9: error: package android.os does not exist
+  import android.os.CancellationSignal;
+                   ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:10: error: package android.util does not exist
+  import android.util.Base64;
+                     ^
+  C:\Users\Shwetank Pathak\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-11.2.0\android\src\main\java\com\it_nomads\fluttersecurestorage\FlutterSecureStorage.java:11: error: package android.util does not exist
+  import android.util.Log;
+                     ^
+  100 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 33s
+Running Gradle task 'assembleDebug'...                             38.3s
+Error: Gradle task assembleDebug failed with exit code 1
